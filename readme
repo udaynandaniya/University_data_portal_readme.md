@@ -13,7 +13,6 @@ Authentication & Access Control
 
 Admin Features
 - Full CRUD on departments, faculty, students, and alumni
-- Bulk data upload/download via CSV and PDF
 - Approve or reject update requests
 - Send notifications to users
 
@@ -43,7 +42,7 @@ Frontend: React.js, Tailwind CSS
 Backend: Node.js, Express.js
 Database: MongoDB + Mongoose
 Auth: JSON Web Token (JWT)
-File Upload: CSV, PDF
+
 
 Folder Structure
 University_data_portal/
