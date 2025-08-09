@@ -1,0 +1,147 @@
+
+# 🎓 University Data Portal
+
+A full-stack web application designed to manage and streamline university data across multiple user roles – **Admin**, **Faculty**,**Department**, **Student**, and **Alumni**.
+
+---
+
+## 📌 Description
+
+The **University Data Portal** is a centralized platform built to simplify and modernize university data workflows. It facilitates efficient data handling, communication, and updates across departments and user types.
+
+---
+
+## 🚀 Features
+
+### 🔐 Authentication & Access Control
+- JWT-based secure login.
+- Role-specific dashboards for Admin, Faculty, Student, and Alumni.
+
+### 🧑‍💼 Admin Features
+- Full CRUD on departments, faculty, students, and alumni.
+- Bulk data upload/download via CSV & PDF.
+- Approve/reject update requests.
+- Send notifications to users.
+
+### 🏢 Department Management
+- Maintain faculty and student data.
+- Department-level control for heads.
+
+### 👨‍🏫 Faculty Panel
+- View/update own profile.
+- View department-specific student data.
+- Communicate with admin and students.
+
+### 🎓 Student Panel
+- Manage profile and academic data.
+- Submit update requests.
+- Receive notifications.
+
+### 🧑‍🎓 Alumni Portal
+- View historical academic data.
+- Network and contribute to the university.
+
+### 🔁 Update Requests
+- Students and faculty submit profile/data change requests.
+- Admin can review and take action.
+
+### 🔔 Notification System
+- Admins can send targeted messages to all or selected users.
+
+---
+
+## 🛠️ Tech Stack
+
+| Layer       | Technology            |
+|------------|------------------------|
+| Frontend   | React.js, Tailwind CSS |
+| Backend    | Node.js, Express.js    |
+| Database   | MongoDB + Mongoose     |
+| Auth       | JSON Web Token (JWT)   |
+| File Upload| CSV, PDF               |
+
+---
+
+## 📂 Folder Structure
+
+```
+
+University\_data\_portal/
+├── client/       # React frontend
+├── server/       # Node.js backend
+├── Preview/      # Screenshots and previews
+└── .gitignore
+
+````
+
+---
+
+
+
+## 🧠 Working & Workflow
+
+1. **Login** – JWT-secured login with role detection.
+2. **Dashboard** – Role-based routing (Admin/Faculty/Student/Alumni).
+3. **Data Access** – Based on roles, with proper restrictions.
+4. **Upload/Update** – File handling and update requests.
+5. **Notifications** – Admin communication to all users.
+
+---
+
+## 🧰 Backend Highlights
+
+- Controllers for each module (admin, faculty, student, alumni, department)
+- Models with Mongoose schema definitions
+- Secure middleware for route protection
+- Update request approval pipeline
+
+---
+
+## 📁 MongoDB Schema Outline
+
+- **Admin**: Email, hashed password, role
+- **Student**: Enrollment no., name, department, academic status
+- **Faculty**: ID, name, department
+- **Alumni**: Graduation year, current status
+- **Department**: Name, course list, faculty references
+- **Update Requests**: User ID, requested field change, status
+
+---
+
+## ✅ How to Run Locally
+
+```bash
+# Clone repository
+git clone https://github.com/udaynandaniya/University_data_portal.git
+cd University_data_portal
+
+# Start backend
+cd server
+npm install
+npm run dev
+
+# Start frontend
+cd ../client
+npm install
+npm start
+````
+
+---
+
+## 🧾 License
+
+This project is licensed under the MIT License.
+
+---
+
+## 🙋‍♂️ Author
+
+**Uday Nandaniya**
+📍 Ahmedabad, India
+📧 [udaynandaniya5@gmail.com](mailto:udaynandaniya5@gmail.com)
+🔗 [GitHub](https://github.com/udaynandaniya) | 💻 [Codeforces](https://codeforces.com/profile/)
+
+---
+
+```
+
